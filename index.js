@@ -16,14 +16,6 @@ app.use(express.urlencoded( { extended:true } ));
 
 const PORT = process.env.PORT || 5050
 
-// const { students } = require('./util/handlers/students');
-
-// app.get('/students', students);
-
-// app.get('/', (req, res) => {
-//     res.send('This is my demo project')
-// })
-
 app.post('/create', async (req, res) => {
     try {
         console.log(req.body);
@@ -94,4 +86,3 @@ app.delete('/delete/:id', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Up and Running at port ${PORT}!`);
 });
-
