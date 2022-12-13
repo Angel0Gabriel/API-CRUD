@@ -60,9 +60,9 @@ app.get('/read/:id', async (req, res) => {
 app.post('/update', async (req, res) => {
     try {
         const id = req.body.id;
-        const newUsername = "angelo1703";
-        const newAge = "20";
-        const newCollege = "vida";
+        const newUsername = "antonio marcos";
+        const newAge = "26";
+        const newCollege = "unifor";
         const userRef = db.collection("Students").doc(id).update({
             name: newUsername,
             age: newAge,
